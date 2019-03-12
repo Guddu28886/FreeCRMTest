@@ -1,5 +1,12 @@
 package com.crm.qa.pages;
 
-public class ContactsPage {
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import com.crm.qa.base.CRMBase;
+
+public class ContactsPage extends CRMBase{
+	
+	
 
 }
