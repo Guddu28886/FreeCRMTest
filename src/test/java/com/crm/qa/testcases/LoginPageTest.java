@@ -21,7 +21,7 @@ public class LoginPageTest extends CRMBase{
 	public void crmTitleTest()
 	{
 		//loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		Assert.assertEquals(loginPage.validateLoginPageTitle(), "CRMPRO- CRM software for customer relationship management, sales, and support.");
+		Assert.assertEquals(loginPage.validateLoginPageTitle(), "CRMPRO - CRM software for customer relationship management, sales, and support.");
 	}
 	@Test(dependsOnMethods="crmTitleTest")
 	public void logoTest()
