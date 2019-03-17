@@ -33,10 +33,16 @@ public class CRMUtil extends CRMBase{
 		js.executeScript("arguments[0].style.backGroundColor='red'", element);
 	}
 
-	public void takeScreenShot() throws IOException
+	public void takeScreenShot(String failedCaseMethodName) throws IOException
 	{
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\screenshots\\screenshot.png"));
+		try {
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\screenshots\\"+failedCaseMethodName+"_Failed.jpg"));
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 	
 }
