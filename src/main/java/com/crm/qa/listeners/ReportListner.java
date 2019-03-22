@@ -1,4 +1,4 @@
-package com.crm.qa.reportlisteners;
+package com.crm.qa.listeners;
 
 import java.io.IOException;
 

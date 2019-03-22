@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FREE CRM Application Test Automation Suite">
 	<listeners>
-			<listener class-name="com.crm.qa.reportlisteners.ExtentReportListener"></listener>
+			<listener class-name="com.crm.qa.listeners.CRMTransformer"></listener>
+			<listener class-name="com.crm.qa.listeners.ExtentReportListener"></listener>
 	</listeners>
 	<test name="Free CRM Test Cases">
 		<classes>
