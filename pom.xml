@@ -105,7 +105,7 @@
           <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                        <suiteXmlFile>\src\main\resources\testng.xml</suiteXmlFile>
+                        <suiteXmlFile>\src\main\resources\${suiteXmlFile}</suiteXmlFile>
                         
                     </suiteXmlFiles>
                 </configuration>
