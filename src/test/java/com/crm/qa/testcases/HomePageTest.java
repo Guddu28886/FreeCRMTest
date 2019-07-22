@@ -32,7 +32,7 @@ public class HomePageTest extends CRMBase{
   public void homePageLogoTest()
   {
 	  Assert.assertEquals(homePage.validateHomePageLogo(),"CRMPRO");
-	  
+	 
   }
   @AfterMethod
   public void tearDown() 
