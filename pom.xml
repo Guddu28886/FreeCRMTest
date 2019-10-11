@@ -115,13 +115,8 @@
           <version>2.20.1</version>
           <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
-<<<<<<< HEAD
                     <suiteXmlFiles>
                           <file>src/main/resources/testng.xml</file>
-=======
-                    <suiteXmlFiles>                      
-                        <file>src/main/resources/testng.xml</file>
->>>>>>> 017bd6d33b6863a790a0030117effa39f82b74d4
                     </suiteXmlFiles>
                 </configuration>
         </plugin>
