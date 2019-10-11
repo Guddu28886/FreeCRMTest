@@ -105,8 +105,7 @@
           <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                      
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                          <file>src/main/resources/testng.xml</file>
                     </suiteXmlFiles>
                 </configuration>
         </plugin>
