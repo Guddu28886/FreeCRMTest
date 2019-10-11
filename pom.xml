@@ -80,6 +80,17 @@
 	    <artifactId>extentreports</artifactId>
 	    <version>2.41.2</version>
 	</dependency>
+
+	<dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-api</artifactId>
+		<version>2.12.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-core</artifactId>
+		<version>2.12.1</version>
+	</dependency>
 	
   </dependencies>
 
@@ -104,9 +115,8 @@
           <version>2.20.1</version>
           <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
-                    <suiteXmlFiles>
-                      
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    <suiteXmlFiles>                      
+                        <file>src/main/resources/testng.xml</file>
                     </suiteXmlFiles>
                 </configuration>
         </plugin>
