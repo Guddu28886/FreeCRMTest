@@ -19,9 +19,8 @@ public class HomePageCalenderMoveTest extends CRMBase{
   {
 	  CRMBase b=new CRMBase();
 	  b.init();
-	  homePage=new HomePage();
 	  loginPage=new LoginPage();
-	  loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
+	  homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
   }
   @Test
   public void calenderMovetest() 

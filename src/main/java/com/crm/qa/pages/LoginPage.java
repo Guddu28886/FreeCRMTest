@@ -35,12 +35,13 @@ public class LoginPage extends CRMBase{
 		return crmLogo.isDisplayed();
 	}
 	
-	public void login(String un,String pw)
+	public HomePage login(String un,String pw)
 	{
 		username.clear();
 		username.sendKeys(un);
 		password.clear();
 		password.sendKeys(pw);
 		loginbtn.click();
+		return new HomePage();
 	}
 }

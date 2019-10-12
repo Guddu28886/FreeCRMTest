@@ -20,8 +20,8 @@ public class HomePageTest extends CRMBase{
 	  CRMBase b=CRMBase.getInstance();
 	  b.init();
 	  loginPage=new LoginPage();
-	  loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
-	  homePage=new HomePage();
+	  homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
+	  
   }
   @Test(dependsOnMethods= {"com.crm.qa.testcases.LoginPageTest.crmTitleTest"})
    public void homePageTitleTest() 

@@ -18,8 +18,8 @@ public class NewContactPageTest extends CRMBase{
 		CRMBase b=new CRMBase();
 		b.init();
 		loginPage=new LoginPage();
-		loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
-		homePage=new HomePage();
+		homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
+		
 	}
 	@Test
 	public void newContactAddTest()
@@ -30,7 +30,7 @@ public class NewContactPageTest extends CRMBase{
 	@AfterMethod
 	public void tearDown()
 	{
-		//driver.close();
+		driver.close();
 	}
 
 }
