@@ -17,7 +17,7 @@ public class LoginPage extends CRMBase{
 	@FindBy(xpath="//input[@type='submit' and @value='Login']")
 	WebElement loginbtn;
 	
-	@FindBy(xpath="//img[@class='img-responsive' and contains(@src,'logo@2x.png')]")
+	@FindBy(xpath="//img[@class='img-responsive' and contains(@src,'logo.png')]")
 	WebElement crmLogo;
 	//Initializing Objects
 	public LoginPage()
