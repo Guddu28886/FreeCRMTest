@@ -23,7 +23,7 @@ public class HomePageTest extends CRMBase{
 	  homePage=loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
 	  
   }
-  @Test(dependsOnMethods= {"com.crm.qa.testcases.LoginPageTest.crmTitleTest"})
+  @Test  //(dependsOnMethods= {"com.crm.qa.testcases.LoginPageTest.crmTitleTest"})
    public void homePageTitleTest() 
   {
 	   Assert.assertEquals(homePage.validateHomePageTitle(), "CRMPRO");

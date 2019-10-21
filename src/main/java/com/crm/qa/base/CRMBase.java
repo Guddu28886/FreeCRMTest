@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class CRMBase {
 	public static CRMBase instanceDriver=null;
 	public static WebDriver driver;
@@ -41,12 +43,14 @@ public class CRMBase {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-server//chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//browser-server//chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.firefox.marionette", System.getProperty("user.dir")+"//browser-server//geckodriver.exe");
+			//System.setProperty("webdriver.firefox.marionette", System.getProperty("user.dir")+"//browser-server//geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver=new FirefoxDriver();
 		}
 		wait=new WebDriverWait(driver, Long.parseLong(prop.getProperty("EXPLICIT_WAIT")));

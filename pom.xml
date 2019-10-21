@@ -91,7 +91,11 @@
 		<artifactId>log4j-core</artifactId>
 		<version>2.12.1</version>
 	</dependency>
-	
+	<dependency>
+		<groupId>io.github.bonigarcia</groupId>
+		<artifactId>webdrivermanager</artifactId>
+		<version>3.7.1</version>
+	</dependency>
   </dependencies>
 
   <build>
@@ -116,7 +120,7 @@
           <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-                          <file>src/main/resources/testng.xml</file>
+                          <file>src/main/resources/${suiteFile}</file>
                     </suiteXmlFiles>
                 </configuration>
         </plugin>

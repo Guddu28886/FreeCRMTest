@@ -3,6 +3,7 @@ package com.crm.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.crm.qa.base.CRMBase;
 
@@ -41,6 +42,8 @@ public class LoginPage extends CRMBase{
 		username.sendKeys(un);
 		password.clear();
 		password.sendKeys(pw);
+		wait.until(ExpectedConditions.visibilityOf(loginbtn));
+		//wait.until(ExpectedConditions.elementToBeClickable(loginbtn));
 		loginbtn.click();
 		return new HomePage();
 	}

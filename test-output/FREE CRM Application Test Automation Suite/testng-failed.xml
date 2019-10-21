@@ -22,13 +22,6 @@
           <include name="homePageLogoTest"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
-      <class name="com.crm.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="crmTitleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Free CRM Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Suite] -->
