@@ -1,5 +1,6 @@
 package com.crm.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -44,7 +45,11 @@ public class LoginPage extends CRMBase{
 		password.sendKeys(pw);
 		wait.until(ExpectedConditions.visibilityOf(loginbtn));
 		//wait.until(ExpectedConditions.elementToBeClickable(loginbtn));
-		loginbtn.click();
+		boolean invisible=wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
+		if(invisible)
+			loginbtn.click();
+		else
+			return null;
 		return new HomePage();
 	}
 }
