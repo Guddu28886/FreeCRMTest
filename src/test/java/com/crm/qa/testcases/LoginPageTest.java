@@ -14,7 +14,7 @@ public class LoginPageTest extends CRMBase{
 	public void setUp()
 	{
 		CRMBase b=CRMBase.getInstance();
-		b.init();
+		//b.init();
 		loginPage=new LoginPage();
 	}
 	@Test

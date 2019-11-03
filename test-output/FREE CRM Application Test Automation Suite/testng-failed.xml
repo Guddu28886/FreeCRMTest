@@ -7,21 +7,15 @@
   </listeners>
   <test thread-count="5" name="Free CRM Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.HomePageCalenderMoveTest">
+      <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="calenderMovetest"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageCalenderMoveTest -->
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <methods>
+          <include name="crmTitleTest"/>
           <include name="setUp"/>
-          <include name="homePageTitleTest"/>
           <include name="tearDown"/>
-          <include name="homePageLogoTest"/>
+          <include name="TsetUp"/>
+          <include name="logoTest"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Free CRM Test Cases(failed) -->
 </suite> <!-- Failed suite [FREE CRM Application Test Automation Suite] -->

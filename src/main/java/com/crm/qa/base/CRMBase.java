@@ -8,6 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+
+import com.crm.qa.pages.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,6 +20,7 @@ public class CRMBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static WebDriverWait wait;
+
 	public CRMBase()
 	{
 		try
@@ -37,7 +42,7 @@ public class CRMBase {
 			instanceDriver=new CRMBase();
 		return instanceDriver;
 	}
-	
+	@BeforeMethod
 	public void init()
 	{
 		String browserName=prop.getProperty("browser");
